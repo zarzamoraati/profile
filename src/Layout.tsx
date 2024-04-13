@@ -1,10 +1,30 @@
 import { Outlet } from "react-router-dom"
 import { Link } from "react-router-dom"
+import { AiFillAliwangwang } from "react-icons/ai";
+
+
 export const Layout = () => {
   return (
     <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <nav className="navbar navbar-expand-md  w-100"
+        style={{marginBottom:"20px"}}>
+          <div className="container-fluid ">
+              <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseItem">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="navbar-collapse collapse" id="collapseItem">
+                <a className="navbar-brand link-light" > 
+                 <AiFillAliwangwang  
+                 style={{width:"100px", height:"80px", borderRadius:"20%"}}/>
+                </a>
+                <ul className="navbar-nav">
+                  <Link to="/" className="nav-link link-light link-opacity-75-hover">Home</Link>
+                  <Link to="/about" className="nav-link link-light link-opacity-75-hover">About Me</Link>
+                  <Link to="/contact" className="nav-link link-light link-opacity-75-hover">Contact</Link>
+                </ul>
+              </div>
+          </div>
+        </nav>
         <div>
             <Outlet/>
         </div>

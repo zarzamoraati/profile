@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #EAECEE;
+    --accent-color: #640c9a;
+    --letter-color: #f1ebeb;
+    --letter-size-links:2rem;
+    --ground-icon-nav: #9ad1e8;
+    --color-icons:#190a11;
+    
+  }
+
+.navbar{
+    padding:10px;
+    background-color: var(--primary-color);
+}
+.nav-link{
+    font-size:var(--letter-size-links);
+}
+.navbar-brand{
+    background-color: var(--ground-icon-nav);
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content:space-between;
+}
+.hero h1{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 3rem;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    min-height:350px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding:10px
+}
+
+
+@media screen and (max-width:750px){
+    .navbar-brand{
+        display:none
+    }
+}
+
+@media screen and (min-width:700px){
+    .hero-bottom img{
+        width:300px
+    }
+}
