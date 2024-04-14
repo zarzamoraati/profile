@@ -43,6 +43,74 @@ section{
     padding:10px
 }
 
+.about-me-main{
+    background-color: var(--primary-color);
+    color: #EAECEE;
+    text-align: center;
+    min-height:450px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.paragraph{
+    padding: 50px;
+    font-size: 2rem;
+    max-width: 950px;
+    
+}
+.title{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3rem;
+}
+
+.section-light{
+    color: #190a11;
+    background-color: white;
+}
+.container-experience{
+    text-align: center;
+  
+}
+.current-projects{
+    background-color: var(--primary-color);
+    color:white
+}
+.project-column{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.badge{
+    font-size: 1.2rem;
+}
+.badges-container{
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-main{
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a{
+    color:inherit
+}
 
 @media screen and (max-width:750px){
     .navbar-brand{
